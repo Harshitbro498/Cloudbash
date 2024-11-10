@@ -1,0 +1,135 @@
+/* Main container */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.app-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 1.5rem;
+}
+
+/* Input field */
+.input-field {
+  padding: 0.75rem;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
+}
+
+/* Submit button */
+.submit-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #357ab7;
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  background-color: #285a8a;
+  transform: translateY(0);
+}
+
+/* Loading message */
+.loading-message {
+  font-size: 1.2rem;
+  color: #4a90e2;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Error message */
+.error-message {
+  color: #e53e3e;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Word table */
+.word-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.word-table th, .word-table td {
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.word-table th {
+  background-color: #f1f5f9;
+  color: #333;
+  font-weight: bold;
+}
+
+.word-table td {
+  background-color: #fafafa;
+}
+
+.word-table td:first-child {
+  font-weight: bold;
+}
+.app-subtitle {
+  font-size: 1.25rem;
+  color: #6b7280; /* A subtle gray color for contrast */
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
