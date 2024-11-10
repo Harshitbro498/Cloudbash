@@ -1,0 +1,2 @@
+This project is a web-based application that allows users to analyze the most frequently occurring words on any webpage. It’s designed with a React frontend and an Express backend integrated with Puppeteer for web scraping. Users can input a URL, and the application will fetch the visible text from that page, calculate the word frequencies, and display the top results.
+It shows expertise in managing third-party libraries like Puppeteer, optimizing API response times, and implementing a clean, responsive UI with React.
